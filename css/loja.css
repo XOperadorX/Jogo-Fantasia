@@ -1,0 +1,488 @@
+/* ==========================================
+   Crônicas de Aetheria
+   Arquivo: css/loja.css
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("../img/fundo-loja.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    color:white;
+
+}
+
+
+
+/* Cabeçalho */
+
+header{
+
+    background:rgba(20,20,20,.95);
+
+    padding:30px;
+
+    text-align:center;
+
+    border-bottom:4px solid #d4af37;
+
+}
+
+
+header h1{
+
+    color:#ffd700;
+
+    font-size:45px;
+
+    text-shadow:0 0 10px #000;
+
+}
+
+
+header p{
+
+    color:#ddd;
+
+}
+
+
+
+/* Conteúdo */
+
+main{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Painéis */
+
+section{
+
+    background:rgba(25,25,25,.94);
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:15px;
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 0 20px rgba(0,0,0,.8);
+
+}
+
+
+
+/* Títulos */
+
+h2{
+
+    color:#ffd700;
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* Ouro */
+
+.ouro{
+
+    background:#222;
+
+    border:2px solid #d4af37;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    text-align:center;
+
+    color:#ffd700;
+
+    font-size:25px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* Produtos */
+
+.loja-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+
+/* Item da loja */
+
+.produto{
+
+    background:#1b1b1b;
+
+    border:2px solid #555;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+
+
+.produto:hover{
+
+    border-color:#ffd700;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+.produto img{
+
+    width:100px;
+
+    height:100px;
+
+    object-fit:contain;
+
+}
+
+
+
+.produto h3{
+
+    color:#ffd700;
+
+    margin:15px 0;
+
+}
+
+
+
+.produto p{
+
+    color:#ccc;
+
+}
+
+
+
+/* Preços */
+
+.preco{
+
+    color:#ffd700;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    margin:10px;
+
+}
+
+
+
+/* Raridades */
+
+.comum{
+
+    border-color:#999;
+
+}
+
+
+.raro{
+
+    border-color:#008cff;
+
+}
+
+
+.epico{
+
+    border-color:#a000ff;
+
+}
+
+
+.lendario{
+
+    border-color:#ff9900;
+
+}
+
+
+
+/* Botões */
+
+button{
+
+    width:180px;
+
+    padding:12px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#ffd700;
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Comprar */
+
+.comprar{
+
+    background:#008000;
+
+    color:white;
+
+}
+
+
+
+.comprar:hover{
+
+    background:#00cc00;
+
+}
+
+
+
+/* Indisponível */
+
+.indisponivel{
+
+    background:#555;
+
+    color:#999;
+
+    cursor:not-allowed;
+
+}
+
+
+
+/* Categorias */
+
+.categorias{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.categoria{
+
+    background:#222;
+
+    padding:12px 25px;
+
+    border-radius:20px;
+
+    border:2px solid #555;
+
+    cursor:pointer;
+
+}
+
+
+
+.categoria:hover{
+
+    border-color:#ffd700;
+
+}
+
+
+
+/* Tabela */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+
+
+th{
+
+    background:#3a2f00;
+
+    color:#ffd700;
+
+    padding:12px;
+
+}
+
+
+
+td{
+
+    padding:12px;
+
+    text-align:center;
+
+    border:1px solid #555;
+
+}
+
+
+
+/* Navegação */
+
+.navegacao{
+
+    text-align:center;
+
+}
+
+
+
+/* Rodapé */
+
+footer{
+
+    padding:20px;
+
+    text-align:center;
+
+    background:rgba(20,20,20,.9);
+
+    border-top:2px solid #d4af37;
+
+}
+
+
+
+footer p{
+
+    color:#ccc;
+
+}
+
+
+
+/* Responsivo */
+
+@media(max-width:1000px){
+
+
+    .loja-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    main{
+
+        width:95%;
+
+    }
+
+
+    .loja-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    button{
+
+        width:100%;
+
+    }
+
+}

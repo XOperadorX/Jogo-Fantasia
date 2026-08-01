@@ -1,0 +1,292 @@
+/* ==========================================
+   Crônicas de Aetheria
+   Arquivo: css/perfil.css
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("../img/fundo-fantasia.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#ffffff;
+
+}
+
+
+/* Cabeçalho */
+
+header{
+
+    background:rgba(20,20,20,.9);
+
+    padding:30px;
+
+    text-align:center;
+
+    border-bottom:4px solid #d4af37;
+
+}
+
+
+header h1{
+
+    color:#ffd700;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+
+header p{
+
+    font-size:18px;
+
+    color:#ddd;
+
+}
+
+
+/* Conteúdo */
+
+main{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+
+/* Painel do perfil */
+
+.perfil{
+
+    background:rgba(25,25,25,.92);
+
+    padding:35px;
+
+    border-radius:15px;
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 0 20px rgba(0,0,0,.8);
+
+    text-align:center;
+
+}
+
+
+/* Imagem do personagem */
+
+.perfil img{
+
+    border-radius:50%;
+
+    border:4px solid #ffd700;
+
+    margin-bottom:20px;
+
+    background:#222;
+
+}
+
+
+/* Nome */
+
+.perfil h2{
+
+    color:#ffd700;
+
+    font-size:32px;
+
+    margin-bottom:25px;
+
+}
+
+
+/* Títulos */
+
+.perfil h3{
+
+    color:#ffd700;
+
+    margin-top:30px;
+
+    margin-bottom:15px;
+
+    border-bottom:1px solid #555;
+
+    padding-bottom:8px;
+
+}
+
+
+/* Texto */
+
+.perfil p{
+
+    line-height:1.6;
+
+    color:#ddd;
+
+}
+
+
+/* Tabelas */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+
+    background:#1b1b1b;
+
+}
+
+
+th{
+
+    background:#3a2f00;
+
+    color:#ffd700;
+
+    padding:12px;
+
+}
+
+
+td{
+
+    padding:12px;
+
+    border:1px solid #555;
+
+}
+
+
+/* Listas */
+
+ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+
+li{
+
+    background:#222;
+
+    margin:8px 0;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border-left:4px solid #d4af37;
+
+}
+
+
+/* Botões */
+
+button{
+
+    width:250px;
+
+    padding:14px;
+
+    margin:10px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+button:hover{
+
+    background:#ffd700;
+
+    transform:scale(1.05);
+
+}
+
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+/* Responsivo */
+
+@media(max-width:700px){
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    main{
+
+        width:95%;
+
+    }
+
+
+    .perfil{
+
+        padding:20px;
+
+    }
+
+
+    button{
+
+        width:100%;
+
+    }
+
+}

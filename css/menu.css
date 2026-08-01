@@ -1,0 +1,431 @@
+/* ==========================================
+   Crônicas de Aetheria
+   Arquivo: css/menu.css
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("../img/fundo-menu.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    color:#ffffff;
+
+}
+
+
+
+/* Cabeçalho */
+
+header{
+
+    background:rgba(20,20,20,.92);
+
+    padding:35px;
+
+    text-align:center;
+
+    border-bottom:4px solid #d4af37;
+
+}
+
+
+header h1{
+
+    color:#ffd700;
+
+    font-size:45px;
+
+    text-shadow:0 0 10px #000;
+
+}
+
+
+header p{
+
+    color:#ddd;
+
+    font-size:20px;
+
+    margin-top:10px;
+
+}
+
+
+
+/* Conteúdo */
+
+main{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Painel principal */
+
+.menu-container{
+
+    background:rgba(25,25,25,.93);
+
+    padding:40px;
+
+    border-radius:20px;
+
+    border:3px solid #d4af37;
+
+    box-shadow:0 0 25px rgba(0,0,0,.8);
+
+    text-align:center;
+
+}
+
+
+
+.menu-container h2{
+
+    color:#ffd700;
+
+    font-size:32px;
+
+    margin-bottom:30px;
+
+}
+
+
+
+/* Informações do jogador */
+
+.status-jogador{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.status-box{
+
+    background:#222;
+
+    border:2px solid #d4af37;
+
+    border-radius:10px;
+
+    padding:20px;
+
+    width:220px;
+
+}
+
+
+
+.status-box h3{
+
+    color:#ffd700;
+
+    margin-bottom:10px;
+
+}
+
+
+
+/* Menu de opções */
+
+.menu-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+
+/* Cartões */
+
+.menu-card{
+
+    background:#1b1b1b;
+
+    border:2px solid #555;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    transition:.3s;
+
+}
+
+
+
+.menu-card:hover{
+
+    border-color:#ffd700;
+
+    transform:translateY(-5px);
+
+}
+
+
+
+/* Ícones */
+
+.menu-card .icone{
+
+    font-size:50px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.menu-card h3{
+
+    color:#ffd700;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.menu-card p{
+
+    color:#ccc;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* Botões */
+
+button{
+
+    width:220px;
+
+    padding:15px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#ffd700;
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+/* Barra de status */
+
+.barra{
+
+    width:100%;
+
+    height:20px;
+
+    background:#333;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    margin-top:10px;
+
+}
+
+
+
+.vida{
+
+    width:80%;
+
+    height:100%;
+
+    background:#b30000;
+
+}
+
+
+
+.mana{
+
+    width:70%;
+
+    height:100%;
+
+    background:#0044cc;
+
+}
+
+
+
+.experiencia{
+
+    width:45%;
+
+    height:100%;
+
+    background:#008000;
+
+}
+
+
+
+/* Botão sair */
+
+.sair{
+
+    background:#8b0000;
+
+    color:white;
+
+}
+
+
+
+.sair:hover{
+
+    background:#ff0000;
+
+}
+
+
+
+/* Rodapé */
+
+footer{
+
+    margin-top:40px;
+
+    padding:20px;
+
+    text-align:center;
+
+    background:rgba(20,20,20,.9);
+
+    border-top:2px solid #d4af37;
+
+}
+
+
+
+footer p{
+
+    color:#ccc;
+
+}
+
+
+
+/* Responsivo */
+
+@media(max-width:900px){
+
+
+    .menu-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
+
+
+@media(max-width:600px){
+
+
+    header h1{
+
+        font-size:32px;
+
+    }
+
+
+    main{
+
+        width:95%;
+
+    }
+
+
+    .menu-container{
+
+        padding:20px;
+
+    }
+
+
+    button{
+
+        width:100%;
+
+    }
+
+}

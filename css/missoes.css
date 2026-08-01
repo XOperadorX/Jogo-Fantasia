@@ -1,0 +1,423 @@
+/* ==========================================
+   Crônicas de Aetheria
+   Arquivo: css/missoes.css
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:
+    linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+    url("../img/fundo-missoes.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+
+    color:#ffffff;
+
+}
+
+
+
+/* Cabeçalho */
+
+header{
+
+    background:rgba(20,20,20,.92);
+
+    padding:30px;
+
+    text-align:center;
+
+    border-bottom:4px solid #d4af37;
+
+}
+
+
+header h1{
+
+    color:#ffd700;
+
+    font-size:40px;
+
+    margin-bottom:10px;
+
+}
+
+
+header p{
+
+    color:#ddd;
+
+    font-size:18px;
+
+}
+
+
+
+/* Conteúdo */
+
+main{
+
+    width:90%;
+
+    max-width:1100px;
+
+    margin:40px auto;
+
+}
+
+
+
+/* Painéis */
+
+section{
+
+    background:rgba(25,25,25,.93);
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:15px;
+
+    border:2px solid #d4af37;
+
+    box-shadow:0 0 20px rgba(0,0,0,.7);
+
+}
+
+
+
+/* Títulos */
+
+h2{
+
+    color:#ffd700;
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+h3{
+
+    color:#f5d76e;
+
+}
+
+
+
+/* Tabelas */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:15px;
+
+}
+
+
+
+th{
+
+    background:#3a2f00;
+
+    color:#ffd700;
+
+    padding:12px;
+
+    border:1px solid #555;
+
+}
+
+
+
+td{
+
+    background:#1b1b1b;
+
+    padding:12px;
+
+    text-align:center;
+
+    border:1px solid #555;
+
+}
+
+
+
+/* Status das missões */
+
+.disponivel{
+
+    color:#00ff7f;
+
+    font-weight:bold;
+
+}
+
+
+.andamento{
+
+    color:#ffd700;
+
+    font-weight:bold;
+
+}
+
+
+.concluida{
+
+    color:#00bfff;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Lista de missões */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+
+li{
+
+    background:#222;
+
+    padding:15px;
+
+    margin:10px 0;
+
+    border-left:5px solid #d4af37;
+
+    border-radius:8px;
+
+}
+
+
+
+/* Barras de progresso */
+
+.progresso{
+
+    width:100%;
+
+    height:25px;
+
+    background:#333;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+.progresso-barra{
+
+    height:100%;
+
+    width:40%;
+
+    background:#d4af37;
+
+    text-align:center;
+
+    color:#111;
+
+    font-weight:bold;
+
+}
+
+
+
+/* Botões */
+
+button{
+
+    width:250px;
+
+    padding:14px;
+
+    margin:10px;
+
+    background:#d4af37;
+
+    color:#111;
+
+    border:none;
+
+    border-radius:8px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+button:hover{
+
+    background:#ffd700;
+
+    transform:scale(1.05);
+
+}
+
+
+
+/* Links */
+
+a{
+
+    text-decoration:none;
+
+}
+
+
+
+/* Caixa da missão principal */
+
+.missao-principal{
+
+    border:3px solid #8b0000;
+
+    background:rgba(60,0,0,.5);
+
+}
+
+
+
+.missao-principal h3{
+
+    color:#ff4444;
+
+    text-align:center;
+
+}
+
+
+
+/* Recompensas */
+
+.recompensa{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.recompensa div{
+
+    background:#222;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    border:1px solid #d4af37;
+
+}
+
+
+
+/* Rodapé */
+
+footer{
+
+    text-align:center;
+
+    padding:20px;
+
+    background:rgba(20,20,20,.9);
+
+    border-top:2px solid #d4af37;
+
+}
+
+
+
+footer p{
+
+    color:#ccc;
+
+}
+
+
+
+/* Responsivo */
+
+@media(max-width:700px){
+
+
+    header h1{
+
+        font-size:30px;
+
+    }
+
+
+    main{
+
+        width:95%;
+
+    }
+
+
+    section{
+
+        padding:15px;
+
+    }
+
+
+    button{
+
+        width:100%;
+
+    }
+
+
+    table{
+
+        font-size:14px;
+
+    }
+
+}

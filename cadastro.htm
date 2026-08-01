@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Crônicas de Aetheria</title>
+
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+
+    <div class="cadastro-container">
+
+        <h1>⚔️ Crônicas de Aetheria ⚔️</h1>
+        <h2>Criar Conta</h2>
+
+        <form action="criar-personagem.html" method="post">
+
+            <label for="nome">Nome Completo</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <label for="usuario">Nome de Usuário</label>
+            <input
+                type="text"
+                id="usuario"
+                name="usuario"
+                placeholder="Escolha um nome de usuário"
+                required
+            >
+
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <label for="senha">Senha</label>
+            <input
+                type="password"
+                id="senha"
+                name="senha"
+                placeholder="Crie uma senha"
+                required
+            >
+
+            <label for="confirmarSenha">Confirmar Senha</label>
+            <input
+                type="password"
+                id="confirmarSenha"
+                name="confirmarSenha"
+                placeholder="Digite novamente a senha"
+                required
+            >
+
+            <label>
+                <input type="checkbox" required>
+                Aceito os Termos de Uso e a Política de Privacidade.
+            </label>
+
+            <br><br>
+
+            <button type="submit">Criar Conta</button>
+
+        </form>
+
+        <div class="links">
+            <p>Já possui uma conta?</p>
+            <a href="login.html">Fazer Login</a>
+
+            <br><br>
+
+            <a href="index.html">⬅ Voltar ao Início</a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️ Configurações - Crônicas de Aetheria</title>
+
+    <link rel="stylesheet" href="css/configuracoes.css">
+</head>
+<body>
+
+<header>
+
+    <h1>⚙️ Configurações</h1>
+    <p>Crônicas de Aetheria</p>
+
+</header>
+
+<main>
+
+    <section>
+
+        <h2>🎮 Configurações do Jogo</h2>
+
+        <form>
+
+            <label for="nomeJogador">Nome do Jogador</label>
+            <input
+                type="text"
+                id="nomeJogador"
+                value="Jogador"
+            >
+
+            <br><br>
+
+            <label for="idioma">Idioma</label>
+
+            <select id="idioma">
+
+                <option>Português (Brasil)</option>
+                <option>English</option>
+                <option>Español</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="dificuldade">Dificuldade</label>
+
+            <select id="dificuldade">
+
+                <option>Fácil</option>
+                <option selected>Normal</option>
+                <option>Difícil</option>
+                <option>Lendário</option>
+
+            </select>
+
+            <br><br>
+
+            <label for="volumeMusica">
+                🎵 Volume da Música
+            </label>
+
+            <input
+                type="range"
+                id="volumeMusica"
+                min="0"
+                max="100"
+                value="70"
+            >
+
+            <br><br>
+
+            <label for="volumeEfeitos">
+                🔊 Volume dos Efeitos
+            </label>
+
+            <input
+                type="range"
+                id="volumeEfeitos"
+                min="0"
+                max="100"
+                value="80"
+            >
+
+            <br><br>
+
+            <label>
+
+                <input type="checkbox" checked>
+
+                Música Ativada
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox" checked>
+
+                Efeitos Sonoros
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox">
+
+                Tela Cheia
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox">
+
+                Mostrar FPS
+
+            </label>
+
+            <br>
+
+            <label>
+
+                <input type="checkbox" checked>
+
+                Salvar Automaticamente
+
+            </label>
+
+            <br><br>
+
+            <button type="submit">
+                💾 Salvar Configurações
+            </button>
+
+            <button type="reset">
+                🔄 Restaurar Padrão
+            </button>
+
+        </form>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>💾 Dados do Jogo</h2>
+
+        <button>💾 Salvar Jogo</button>
+
+        <button>📂 Carregar Jogo</button>
+
+        <button>🗑️ Apagar Save</button>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>ℹ️ Informações</h2>
+
+        <table border="1" cellpadding="8">
+
+            <tr>
+                <th>Versão</th>
+                <td>1.0.0</td>
+            </tr>
+
+            <tr>
+                <th>Motor</th>
+                <td>HTML5 + CSS3 + JavaScript</td>
+            </tr>
+
+            <tr>
+                <th>Desenvolvedor</th>
+                <td>Equipe Crônicas de Aetheria</td>
+            </tr>
+
+        </table>
+
+    </section>
+
+    <hr>
+
+    <section>
+
+        <h2>🚪 Navegação</h2>
+
+        <a href="menu.html">
+            <button>🏠 Menu Principal</button>
+        </a>
+
+        <a href="perfil.html">
+            <button>👤 Perfil</button>
+        </a>
+
+        <a href="inventario.html">
+            <button>🎒 Inventário</button>
+        </a>
+
+        <a href="index.html">
+            <button>🚪 Sair do Jogo</button>
+        </a>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>&copy; 2026 - Crônicas de Aetheria</p>
+
+</footer>
+
+</body>
+</html>

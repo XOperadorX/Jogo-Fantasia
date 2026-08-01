@@ -1,0 +1,163 @@
+/* ==========================================
+   Crônicas de Aetheria
+   Arquivo: css/login.css
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
+               url("../img/fundo-login.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    color:#ffffff;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.login-container{
+
+    width:420px;
+    max-width:95%;
+
+    background:rgba(20,20,20,.92);
+
+    border:2px solid #d4af37;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:0 0 20px rgba(0,0,0,.7);
+
+}
+
+.login-container h1{
+
+    text-align:center;
+    color:#ffd700;
+    margin-bottom:10px;
+
+}
+
+.login-container h2{
+
+    text-align:center;
+    margin-bottom:30px;
+    color:#ffffff;
+
+}
+
+label{
+
+    display:block;
+    margin-top:15px;
+    margin-bottom:8px;
+    font-weight:bold;
+
+}
+
+input{
+
+    width:100%;
+    padding:12px;
+
+    border:1px solid #555;
+    border-radius:8px;
+
+    background:#2b2b2b;
+    color:#ffffff;
+
+    font-size:16px;
+
+}
+
+input:focus{
+
+    outline:none;
+    border-color:#ffd700;
+
+}
+
+button{
+
+    width:100%;
+    margin-top:25px;
+
+    padding:14px;
+
+    background:#d4af37;
+    color:#111;
+
+    border:none;
+    border-radius:8px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#ffd700;
+    transform:scale(1.03);
+
+}
+
+.links{
+
+    margin-top:25px;
+    text-align:center;
+
+}
+
+.links a{
+
+    color:#ffd700;
+    text-decoration:none;
+    font-weight:bold;
+
+}
+
+.links a:hover{
+
+    text-decoration:underline;
+
+}
+
+hr{
+
+    margin:25px 0;
+    border:1px solid #444;
+
+}
+
+@media (max-width:600px){
+
+    .login-container{
+
+        width:95%;
+        padding:25px;
+
+    }
+
+    .login-container h1{
+
+        font-size:28px;
+
+    }
+
+}

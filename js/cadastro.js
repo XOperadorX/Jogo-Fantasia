@@ -1,97 +1,115 @@
-/* ==========================================
-   Crônicas de Aetheria
-   Arquivo: js/cadastro.js
-========================================== */
-
-// Sistema simples de cadastro usando localStorage
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    const formulario = document.querySelector("form");
+// ======================================
+// Crônicas de Aetheria
+// Arquivo: js/cadastro.js
+// ======================================
 
 
-    if(formulario){
-
-        formulario.addEventListener("submit", function(event){
-
-            event.preventDefault();
+document
+.getElementById("formCadastro")
+.addEventListener("submit", function(event){
 
 
-            let nome = document.getElementById("nome").value;
-
-            let usuario = document.getElementById("usuario").value;
-
-            let email = document.getElementById("email").value;
-
-            let senha = document.getElementById("senha").value;
-
-            let confirmarSenha =
-            document.getElementById("confirmarSenha").value;
+    // impede erro HTTP 405
+    event.preventDefault();
 
 
 
-            // Verifica se as senhas são iguais
-
-            if(senha !== confirmarSenha){
-
-                alert(
-                    "❌ As senhas não são iguais!"
-                );
-
-                return;
-
-            }
+    let nome =
+    document.getElementById("nome").value;
 
 
 
-            // Cria objeto do jogador
-
-            let jogador = {
-
-                nome:nome,
-
-                usuario:usuario,
-
-                email:email,
-
-                senha:senha,
-
-                nivel:1,
-
-                experiencia:0,
-
-                ouro:500,
-
-                personagem:null
-
-            };
+    let usuario =
+    document.getElementById("usuario").value;
 
 
 
-            // Salva cadastro
-
-            localStorage.setItem(
-                "usuario",
-                JSON.stringify(jogador)
-            );
+    let email =
+    document.getElementById("email").value;
 
 
 
-            alert(
-                "🧙 Conta criada com sucesso!"
-            );
+    let senha =
+    document.getElementById("senha").value;
 
 
 
-            // Vai para criação do personagem
-
-            window.location.href =
-            "criar-personagem.html";
+    let confirmarSenha =
+    document.getElementById("confirmarSenha").value;
 
 
-        });
+
+
+    if(senha !== confirmarSenha){
+
+
+        document.getElementById("mensagem").innerHTML =
+        "❌ As senhas não são iguais!";
+
+
+        return;
 
     }
+
+
+
+
+    let conta = {
+
+
+        nome:nome,
+
+
+        usuario:usuario,
+
+
+        email:email,
+
+
+        senha:senha,
+
+
+        ouro:500,
+
+
+        nivel:1,
+
+
+        personagem:null
+
+
+    };
+
+
+
+
+    localStorage.setItem(
+
+        "usuario",
+
+        JSON.stringify(conta)
+
+    );
+
+
+
+
+    document.getElementById("mensagem").innerHTML =
+
+    "✅ Conta criada! Criando personagem...";
+
+
+
+
+    setTimeout(function(){
+
+
+        window.location.href =
+        "criar-personagem.html";
+
+
+    },1500);
+
 
 
 });

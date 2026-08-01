@@ -1,157 +1,174 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Personagem - Crônicas de Aetheria</title>
 
-    <link rel="stylesheet" href="css/criar-personagem.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>🧙 Criar Personagem - Crônicas de Aetheria</title>
+
+<link rel="stylesheet" href="css/criar-personagem.css">
+
 </head>
+
+
 <body>
 
-    <header>
-        <h1>⚔️ Crônicas de Aetheria ⚔️</h1>
-        <p>Criação do Personagem</p>
-    </header>
 
-    <main>
+<header>
 
-        <form action="perfil.html" method="post">
+<h1>🧙 Criar Personagem</h1>
 
-            <h2>Informações Básicas</h2>
+<p>Crônicas de Aetheria</p>
 
-            <label for="nome">Nome do Personagem</label>
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Ex.: Lyra Valenor"
-                required
-            >
+</header>
 
-            <label for="idade">Idade</label>
-            <input
-                type="number"
-                id="idade"
-                name="idade"
-                min="16"
-                max="999"
-                required
-            >
 
-            <label for="genero">Gênero</label>
-            <select id="genero" name="genero" required>
-                <option value="">Selecione</option>
-                <option>Masculino</option>
-                <option>Feminino</option>
-                <option>Não Binário</option>
-                <option>Outro</option>
-            </select>
 
-            <label for="raca">Raça</label>
-            <select id="raca" name="raca" required>
-                <option value="">Selecione</option>
-                <option>Humano</option>
-                <option>Elfo</option>
-                <option>Anão</option>
-                <option>Orc</option>
-                <option>Draconato</option>
-                <option>Fada</option>
-                <option>Demônio</option>
-                <option>Anjo</option>
-            </select>
+<main>
 
-            <label for="classe">Classe</label>
-            <select id="classe" name="classe" required>
-                <option value="">Selecione</option>
-                <option>Guerreiro</option>
-                <option>Mago</option>
-                <option>Arqueiro</option>
-                <option>Paladino</option>
-                <option>Assassino</option>
-                <option>Necromante</option>
-                <option>Druida</option>
-                <option>Monge</option>
-            </select>
 
-            <label for="elemento">Elemento</label>
-            <select id="elemento" name="elemento">
-                <option>Fogo 🔥</option>
-                <option>Água 💧</option>
-                <option>Terra 🌿</option>
-                <option>Vento 🌪️</option>
-                <option>Luz ✨</option>
-                <option>Trevas 🌑</option>
-                <option>Arcano 🔮</option>
-            </select>
+<section class="personagem-container">
 
-            <h2>Aparência</h2>
 
-            <label for="aparencia">Descrição da Aparência</label>
-            <textarea
-                id="aparencia"
-                name="aparencia"
-                rows="4"
-                placeholder="Descreva a aparência do personagem..."
-            ></textarea>
+<h2>⚔️ Novo Aventureiro</h2>
 
-            <h2>História</h2>
 
-            <label for="historia">História</label>
-            <textarea
-                id="historia"
-                name="historia"
-                rows="6"
-                placeholder="Conte a história do personagem..."
-            ></textarea>
 
-            <h2>Atributos Iniciais</h2>
+<form id="formPersonagem">
 
-            <label>❤️ Vida (HP)</label>
-            <input type="number" value="100" readonly>
 
-            <label>🔷 Mana (MP)</label>
-            <input type="number" value="100" readonly>
 
-            <label>⚔️ Ataque</label>
-            <input type="number" value="10" readonly>
+<label>
+Nome do Personagem
+</label>
 
-            <label>🛡️ Defesa</label>
-            <input type="number" value="10" readonly>
+<input 
+type="text"
+id="nomePersonagem"
+placeholder="Ex: Lyra"
+required>
 
-            <label>⚡ Velocidade</label>
-            <input type="number" value="10" readonly>
 
-            <h2>Escolha uma Arma Inicial</h2>
 
-            <select id="arma" name="arma">
-                <option>Espada</option>
-                <option>Machado</option>
-                <option>Arco</option>
-                <option>Cajado</option>
-                <option>Adaga</option>
-                <option>Lança</option>
-            </select>
+<label>
+Idade
+</label>
 
-            <br><br>
+<input 
+type="number"
+id="idade"
+required>
 
-            <button type="submit">
-                🧙 Criar Personagem
-            </button>
 
-            <button type="reset">
-                🔄 Limpar
-            </button>
 
-        </form>
+<label>
+Gênero
+</label>
 
-        <br>
+<select id="genero">
 
-        <a href="index.html">
-            <button>🏠 Voltar ao Início</button>
-        </a>
+<option>Feminino</option>
 
-    </main>
+<option>Masculino</option>
+
+<option>Outro</option>
+
+</select>
+
+
+
+<label>
+Raça
+</label>
+
+<select id="raca">
+
+<option>Humano</option>
+
+<option>Elfo</option>
+
+<option>Anão</option>
+
+<option>Orc</option>
+
+</select>
+
+
+
+
+<label>
+Classe
+</label>
+
+<select id="classe">
+
+
+<option>Mago</option>
+
+<option>Guerreiro</option>
+
+<option>Arqueiro</option>
+
+<option>Paladino</option>
+
+
+</select>
+
+
+
+
+<label>
+História do personagem
+</label>
+
+
+<textarea 
+id="historia"
+placeholder="Conte a história do seu herói...">
+</textarea>
+
+
+
+
+<button type="submit">
+
+🧙 Criar Personagem
+
+</button>
+
+
+
+</form>
+
+
+<p id="mensagem"></p>
+
+
+</section>
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+© 2026 - Crônicas de Aetheria
+</p>
+
+</footer>
+
+
+
+
+<script src="js/criar-personagem.js"></script>
+
 
 </body>
+
 </html>

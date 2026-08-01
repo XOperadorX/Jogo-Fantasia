@@ -1,87 +1,162 @@
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - Crônicas de Aetheria</title>
 
-    <link rel="stylesheet" href="css/cadastro.css">
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>📝 Cadastro - Crônicas de Aetheria</title>
+
+<link rel="stylesheet" href="css/cadastro.css">
+
 </head>
+
+
 <body>
 
-    <div class="cadastro-container">
 
-        <h1>⚔️ Crônicas de Aetheria ⚔️</h1>
-        <h2>Criar Conta</h2>
+<header>
 
-        <form action="criar-personagem.html" method="post">
+<h1>📝 Criar Conta</h1>
 
-            <label for="nome">Nome Completo</label>
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
-                required
-            >
+<p>Crônicas de Aetheria</p>
 
-            <label for="usuario">Nome de Usuário</label>
-            <input
-                type="text"
-                id="usuario"
-                name="usuario"
-                placeholder="Escolha um nome de usuário"
-                required
-            >
+</header>
 
-            <label for="email">E-mail</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-            >
 
-            <label for="senha">Senha</label>
-            <input
-                type="password"
-                id="senha"
-                name="senha"
-                placeholder="Crie uma senha"
-                required
-            >
 
-            <label for="confirmarSenha">Confirmar Senha</label>
-            <input
-                type="password"
-                id="confirmarSenha"
-                name="confirmarSenha"
-                placeholder="Digite novamente a senha"
-                required
-            >
+<main>
 
-            <label>
-                <input type="checkbox" required>
-                Aceito os Termos de Uso e a Política de Privacidade.
-            </label>
 
-            <br><br>
+<section class="cadastro-container">
 
-            <button type="submit">Criar Conta</button>
 
-        </form>
+<h2>⚔️ Cadastro do Aventureiro</h2>
 
-        <div class="links">
-            <p>Já possui uma conta?</p>
-            <a href="login.html">Fazer Login</a>
 
-            <br><br>
 
-            <a href="index.html">⬅ Voltar ao Início</a>
-        </div>
+<form id="formCadastro">
 
-    </div>
+
+<label>
+👤 Nome do Jogador
+</label>
+
+
+<input 
+type="text"
+id="nome"
+placeholder="Digite seu nome"
+required>
+
+
+
+<label>
+🎮 Nome de Usuário
+</label>
+
+
+<input 
+type="text"
+id="usuario"
+placeholder="Escolha um usuário"
+required>
+
+
+
+<label>
+📧 E-mail
+</label>
+
+
+<input 
+type="email"
+id="email"
+placeholder="Digite seu e-mail"
+required>
+
+
+
+<label>
+🔐 Senha
+</label>
+
+
+<input 
+type="password"
+id="senha"
+placeholder="Digite sua senha"
+required>
+
+
+
+<label>
+🔐 Confirmar Senha
+</label>
+
+
+<input 
+type="password"
+id="confirmarSenha"
+placeholder="Confirme sua senha"
+required>
+
+
+
+<button type="submit">
+
+✨ Criar Conta
+
+</button>
+
+
+
+</form>
+
+
+
+<p id="mensagem"></p>
+
+
+
+<p>
+
+Já possui conta?
+
+<a href="login.html">
+Entrar
+</a>
+
+</p>
+
+
+
+</section>
+
+
+</main>
+
+
+
+
+<footer>
+
+<p>
+© 2026 - Crônicas de Aetheria
+</p>
+
+</footer>
+
+
+
+
+<script src="js/cadastro.js"></script>
+
 
 </body>
+
 </html>
+```

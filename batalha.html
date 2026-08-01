@@ -1,201 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>⚔️ Batalha - Crônicas de Aetheria</title>
 
+
     <link rel="stylesheet" href="css/batalha.css">
+
 </head>
+
+
 <body>
 
+
 <header>
+
     <h1>⚔️ Campo de Batalha</h1>
+
     <p>Crônicas de Aetheria</p>
+
 </header>
+
+
+
 
 <main>
 
-    <section>
 
-        <h2>👤 Herói</h2>
+<section>
+
+
+<h2>🔥 Combate Atual</h2>
+
+
+<div class="combate">
+
+
+
+    <!-- Jogador -->
+
+    <div class="personagem">
+
+
+        <h3>🧙 Herói</h3>
+
 
         <img src="img/personagens/lyra.png"
-             alt="Herói"
-             width="180">
+             alt="Lyra">
 
-        <table border="1" cellpadding="8">
 
-            <tr>
-                <th>Nome</th>
-                <td>Lyra Valenor</td>
-            </tr>
+        <h2 id="nomeJogador">
+            Lyra
+        </h2>
 
-            <tr>
-                <th>Nível</th>
-                <td>1</td>
-            </tr>
 
-            <tr>
-                <th>Classe</th>
-                <td>Maga Arcana</td>
-            </tr>
+        <div class="status">
 
-            <tr>
-                <th>❤️ Vida</th>
-                <td>100 / 100</td>
-            </tr>
 
-            <tr>
-                <th>🔷 Mana</th>
-                <td>100 / 100</td>
-            </tr>
+            <p>
+                ❤️ Vida:
+                <span id="hpJogador">
+                    100 / 100
+                </span>
+            </p>
 
-            <tr>
-                <th>⚔️ Ataque</th>
-                <td>25</td>
-            </tr>
 
-            <tr>
-                <th>🛡️ Defesa</th>
-                <td>18</td>
-            </tr>
+            <div class="barra">
 
-        </table>
+                <div class="vida"
+                     id="barraVida">
+                </div>
 
-    </section>
+            </div>
 
-    <hr>
 
-    <section>
 
-        <h2>👹 Inimigo</h2>
+            <p>
+                🔷 Mana:
+                <span id="mpJogador">
+                    50 / 50
+                </span>
+            </p>
+
+
+            <div class="barra">
+
+                <div class="mana"
+                     id="barraMana">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+    <!-- Inimigo -->
+
+
+    <div class="inimigo">
+
+
+        <h3>👹 Inimigo</h3>
+
 
         <img src="img/monstros/lobo.png"
-             alt="Lobo Selvagem"
-             width="180">
+             alt="Lobo Selvagem">
 
-        <table border="1" cellpadding="8">
 
-            <tr>
-                <th>Nome</th>
-                <td>Lobo Selvagem</td>
-            </tr>
 
-            <tr>
-                <th>Nível</th>
-                <td>1</td>
-            </tr>
+        <h2 id="nomeInimigo">
 
-            <tr>
-                <th>❤️ Vida</th>
-                <td>60 / 60</td>
-            </tr>
+            Lobo Selvagem
 
-            <tr>
-                <th>⚔️ Ataque</th>
-                <td>12</td>
-            </tr>
+        </h2>
 
-            <tr>
-                <th>🛡️ Defesa</th>
-                <td>5</td>
-            </tr>
 
-        </table>
 
-    </section>
+        <div class="status">
 
-    <hr>
 
-    <section>
+            <p>
 
-        <h2>🎮 Ações de Combate</h2>
+                ❤️ Vida:
 
-        <button>⚔️ Ataque Básico</button>
-        <button>🔥 Magia</button>
-        <button>🧪 Usar Poção</button>
-        <button>🛡️ Defender</button>
-        <button>🏃 Fugir</button>
+                <span id="hpInimigo">
+                    60
+                </span>
 
-    </section>
+            </p>
 
-    <hr>
 
-    <section>
 
-        <h2>📜 Registro da Batalha</h2>
+            <div class="barra">
 
-        <textarea rows="12" cols="90" readonly>
+                <div class="inimigo-vida"
+                     id="barraInimigo">
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2>🎮 Ações de Combate</h2>
+
+
+<div class="acoes">
+
+
+<button onclick="ataqueBasico()">
+
+⚔️ Ataque
+
+</button>
+
+
+
+<button onclick="usarMagia()">
+
+✨ Magia
+
+</button>
+
+
+
+<button onclick="usarPocao()">
+
+🧪 Poção
+
+</button>
+
+
+
+<button onclick="defender()">
+
+🛡️ Defender
+
+</button>
+
+
+
+<button class="fugir"
+        onclick="fugirBatalha()">
+
+🏃 Fugir
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section>
+
+
+<h2>📜 Registro da Batalha</h2>
+
+
+
+<textarea
+id="logBatalha"
+readonly>
+
 
 A batalha começou!
 
-Lyra encontrou um Lobo Selvagem.
+Lyra encontrou um inimigo.
 
-O que deseja fazer?
 
-        </textarea>
+</textarea>
 
-    </section>
 
-    <hr>
+</section>
 
-    <section>
 
-        <h2>🎁 Recompensas da Vitória</h2>
 
-        <table border="1" cellpadding="8">
 
-            <tr>
-                <th>Experiência</th>
-                <td>+50 XP</td>
-            </tr>
 
-            <tr>
-                <th>Ouro</th>
-                <td>+20 🪙</td>
-            </tr>
+<section>
 
-            <tr>
-                <th>Item</th>
-                <td>Pele de Lobo</td>
-            </tr>
 
-        </table>
+<h2>🎁 Recompensas</h2>
 
-    </section>
 
-    <hr>
+<table>
 
-    <section>
 
-        <h2>🚪 Navegação</h2>
+<tr>
 
-        <a href="menu.html">
-            <button>🏠 Menu Principal</button>
-        </a>
+<th>Recompensa</th>
 
-        <a href="inventario.html">
-            <button>🎒 Inventário</button>
-        </a>
+<th>Quantidade</th>
 
-        <a href="missoes.html">
-            <button>📜 Missões</button>
-        </a>
+</tr>
 
-        <a href="mapa.html">
-            <button>🗺️ Voltar ao Mapa</button>
-        </a>
 
-    </section>
+<tr>
+
+<td>⭐ Experiência</td>
+
+<td id="xpGanho">
+0 XP
+
+</td>
+
+</tr>
+
+
+
+<tr>
+
+<td>🪙 Ouro</td>
+
+<td id="ouroGanho">
+0
+
+</td>
+
+</tr>
+
+
+</table>
+
+
+
+</section>
+
+
+
+
+
+
+<section>
+
+
+<h2>🚪 Navegação</h2>
+
+
+<a href="menu.html">
+
+<button>
+
+🏠 Menu
+
+</button>
+
+</a>
+
+
+
+<a href="mapa.html">
+
+<button>
+
+🗺️ Mapa
+
+</button>
+
+</a>
+
+
+
+<a href="inventario.html">
+
+<button>
+
+🎒 Inventário
+
+</button>
+
+</a>
+
+
+
+</section>
+
+
+
 
 </main>
 
+
+
+
+
 <footer>
 
-    <p>&copy; 2026 - Crônicas de Aetheria</p>
+<p>
+
+© 2026 - Crônicas de Aetheria
+
+</p>
 
 </footer>
 
+
+
+
+
+<script src="js/batalha.js"></script>
+
+<script src="js/jogo.js"></script>
+
+
+
 </body>
+
 </html>
